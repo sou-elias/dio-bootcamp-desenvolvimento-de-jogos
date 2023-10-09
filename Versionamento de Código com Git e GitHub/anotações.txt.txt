@@ -1,0 +1,35 @@
+## Visão Geral
+
+- Versionamento de código se refere a gerar uma nova versão a cada alteração feita em um código
+- Os Sistemas de Controle de Versão controlam as versões de um arquivo ao longo do tempo (registro do histórico de atualizações; gerenciamento de quais foram as alterações, data, autor etc; organização controle e segurança)
+- 2 tipos de Sistemas de Controle de Versão: VSC Centralizado (CVCS) e VCS Distribuído (DVCS)
+- **CVCS**: um servidor com todos os arquivos de controle de versão; não é possível salvar quando está desconectado e caso um arquivo seja corrompido e não tenha backup, você perde todo o seu projeto
+- **DVCS**: cada repositório é duplicado localmente, permitindo editar mesmo que o servidor esteja fora do ar; clona histórico completo, incluindo o histórico de alterações
+- **Git**: DVCS gratuito e open source; ramificações e fusões eficientes; leve e rápido
+- **GitHub**: plataforma de hospedagem de código para controle de versão com Git, e colaboração (comunidade ativa; utilizado mundialmente)
+
+## Introdução, Configuração e Autenticação
+
+- **Open Git Bash here** para abrir o terminal dentro uma pasta
+- Configurações são armazenadas em 3 lugares: **—global** (configurações que se encontram no usuário em que a gente está no momento); **—system** (referente às configurações do sistema como um todo, abrigando todos os usuários) e **—local** (referente ao repositório específico em que você se encontra).
+- O Git não depende de outras plataformas como o GitHub para fazer versionamento
+- Desde 2021 o GitHub deixou de aceitar o uso de senhas como autenticação de processos Git, passando a exigir Tokens ou Chaves SSH
+- O **$** indica o início de um novo comando
+- O que começa com ponto (.git, por exemplo) é o que está oculto
+
+## Primeiros passos com Git e GitHub
+
+- Existem duas formas de obter repositório Git na sua máquina: 1. Transformando um diretório local que não está sob controle de versão, num repositório Git e 2. Clonando um repositório Git existente
+- O comando **mkdir** é um comando do terminal, diferente dos comandos como **git init** que são comandos do Git
+- Quando for clonar um repositório com várias Branchs, é possível clonar apenas uma, caso deseje
+- **.gitignore** serve para definir arquivos que você não deseja que sejam enviados para o seu repositório remoto
+- A **Área de Preparação** é onde a gente prepara os arquivos que a gente quer salvar, quer empacotar em um commit
+- **Arquivos não rastreados** são aqueles que o Git encontra mas não reconhece. Ou seja, que se encontram no diretório de trabalho mas que não estava presente em nenhum commit anterior e também não está na área de preparação
+- **Markdown** é uma linguagem de marcação simples, menos complexa que o HTML, e é utilizada nos Readme
+- [Readme.so](http://Readme.so) é um site para editar textos em Markdown
+- Em Markdown, os **colchetes []** servem para inserir links. Para isso, é preciso colocar a URL entre **parênteses ()** depois do texto em colchete
+- Adicionar os arquivos na área de preparação, **não salva as alterações**, para isso a gente precisa organizar e inserir dentro de um commit
+- O Git não reconhece **diretórios vazios**
+- **.gitkeep** serve para que o Git reconheça um diretório vazio
+- Existem 3 tipos de restauração de alterações: soft, mixed e hard
+
